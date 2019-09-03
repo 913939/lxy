@@ -10,7 +10,6 @@ class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        {/* <Button type="primary">Button</Button> */}
         <Router/>
       </div>
     );
