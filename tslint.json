@@ -1,5 +1,10 @@
 {
-    "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "tslint-config-prettier"
+    ],
     "linterOptions": {
         "exclude": [
             "config/**/*.js",
@@ -8,12 +13,21 @@
         ]
     },
     "rules": {
-        "interface-name": [true, "never-prefix"],
-        "no-console": [
-            false
+        "interface-name": [
+            true,
+            "never-prefix"
         ],
-        "only-arrow-functions": [
-            false
+        "no-console": false,
+        "jsx-self-close": false,
+        "jsx-no-lambda": false,
+        "object-literal-sort-keys": false,
+        "member-access": false,
+        "ordered-imports": [
+            false,
+            {
+                "import-sources-order": "lowercase-last",
+                "named-imports-order": "lowercase-first"
+            }
         ]
     }
 }
